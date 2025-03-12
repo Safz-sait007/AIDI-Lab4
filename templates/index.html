@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish Weight Predictor</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9ecef;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+        }
+        form {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 400px;
+            margin: auto;
+            text-align: left;
+        }
+        h2 {
+            color: #343a40;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #495057;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .row .column {
+            flex: 1;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            background: #28a745;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 400px;
+            margin: 20px auto;
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Fish Weight Predictor</h2>
+    <form action="/predict" method="post">
+        <div class="row">
+            <div class="column">
+                <label for="Length1">Length1:</label>
+                <input type="text" name="Length1" required>
+            </div>
+            <div class="column">
+                <label for="Length2">Length2:</label>
+                <input type="text" name="Length2" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <label for="Length3">Length3:</label>
+                <input type="text" name="Length3" required>
+            </div>
+            <div class="column">
+                <label for="Height">Height:</label>
+                <input type="text" name="Height" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <label for="Width">Width:</label>
+                <input type="text" name="Width" required>
+            </div>
+            <div class="column">
+                <label for="Species">Species:</label>
+                <select name="Species" required>
+                    <option value="Bream">Bream</option>
+                    <option value="Parkki">Parkki</option>
+                    <option value="Perch">Perch</option>
+                    <option value="Pike">Pike</option>
+                    <option value="Roach">Roach</option>
+                    <option value="Smelt">Smelt</option>
+                </select>
+            </div>
+        </div>
+        <button type="submit">Predict</button>
+    </form>
+    
+    <div class="result">{{ prediction_text }}</div>
+</body>
+</html>
