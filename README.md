@@ -11,17 +11,17 @@ This project is a Machine Learning (ML) web application that predicts the weight
 
 •	Features:
 
-o	Species (Categorical)
+  o	Species (Categorical)
 
-o	Length1 (Vertical length)
+  o	Length1 (Vertical length)
 
-o	Length2 (Diagonal length)
+  o	Length2 (Diagonal length)
 
-o	Length3 (Cross length)
+  o	Length3 (Cross length)
 
-o	Height
+  o	Height
 
-o	Width
+  o	Width
 
 •	Target Variable: Weight (grams)
 
@@ -34,16 +34,16 @@ o	Width
 
 •	Preprocessing Steps:
 
-o	One-hot encoding for categorical variables (Species)
+  o	One-hot encoding for categorical variables (Species)
 
-o	Standardization of numerical features (Length, Height, Width)
+  o	Standardization of numerical features (Length, Height, Width)
 
-o	Train-test split (80% training, 20% testing)
+  o	Train-test split (80% training, 20% testing)
 
 •	Evaluation Metrics:
 
-o	Mean Squared Error (MSE)
+  o	Mean Squared Error (MSE)
 
-o	R² Score
+  o	R² Score
 
 
