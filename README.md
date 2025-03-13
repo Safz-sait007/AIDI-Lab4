@@ -7,9 +7,9 @@ This project is a Machine Learning (ML) web application that predicts the weight
 
 # Dataset
 
-•	Source: Kaggle - Fish Market Dataset
+**Source:** Kaggle - Fish Market Dataset
 
-•	Features:
+**Features:**
 
   o	Species (Categorical)
 
@@ -19,20 +19,20 @@ This project is a Machine Learning (ML) web application that predicts the weight
 
   o	Length3 (Cross length)
 
-    o	Height
+  o	Height
 
-    o	Width
+  o	Width
 
-•	Target Variable: Weight (grams)
+**Target Variable:** Weight (grams)
 
 
 # Machine Learning Model
 
-•	Problem Type: Regression (Predicting fish weight)
+**Problem Type:** Regression (Predicting fish weight)
 
-•	Algorithm Used: Random Forest Regressor
+**Algorithm Used:** Random Forest Regressor
 
-•	Preprocessing Steps:
+**Preprocessing Steps:**
 
   o	One-hot encoding for categorical variables (Species)
 
@@ -40,7 +40,7 @@ This project is a Machine Learning (ML) web application that predicts the weight
 
   o	Train-test split (80% training, 20% testing)
 
-•	Evaluation Metrics:
+**Evaluation Metrics:**
 
   o	Mean Squared Error (MSE)
 
