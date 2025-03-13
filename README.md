@@ -19,9 +19,9 @@ This project is a Machine Learning (ML) web application that predicts the weight
 
   o	Length3 (Cross length)
 
-  o	Height
+    o	Height
 
-  o	Width
+    o	Width
 
 •	Target Variable: Weight (grams)
 
